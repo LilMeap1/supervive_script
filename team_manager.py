@@ -7,11 +7,11 @@ from PyQt6.QtCore import Qt
 import json
 import re
 
-# File paths
+
 TEAM_FILE = "teams.json"
 PLAYER_FILE = "players.json"
 
-# Load data functions
+
 def load_json(file_path):
     try:
         with open(file_path, "r") as file:
@@ -27,24 +27,24 @@ class TeamManager(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Team Manager")
-        self.setGeometry(100, 100, 800, 500)  # Increased width for parallel layout
+        self.setGeometry(100, 100, 800, 500)  
 
-        # Load existing teams and players
+ 
         self.teams = load_json(TEAM_FILE)
         self.players = load_json(PLAYER_FILE)
 
         layout = QVBoxLayout()
 
-        # Horizontal Layout for Parallel Lists
+
         list_layout = QHBoxLayout()
 
-        # Team List
+
         self.team_list = QListWidget()
         self.team_list.setContextMenuPolicy(Qt.ContextMenuPolicy.CustomContextMenu)
         self.team_list.customContextMenuRequested.connect(self.show_team_context_menu)
         list_layout.addWidget(self.team_list)
 
-        # Unassigned Players List
+
         self.unassigned_list = QListWidget()
         list_layout.addWidget(self.unassigned_list)
 
@@ -53,7 +53,7 @@ class TeamManager(QWidget):
         self.update_team_list()
         self.update_unassigned_list()
 
-        # Team Inputs
+
         self.team_name_input = QLineEdit()
         self.team_name_input.setPlaceholderText("Enter team tag")
         layout.addWidget(QLabel("Team Name:"))
@@ -67,12 +67,12 @@ class TeamManager(QWidget):
             layout.addWidget(QLabel(f"Player {i + 1}:"))
             layout.addWidget(player_input)
 
-        # Add Team Button
+
         self.add_team_button = QPushButton("Add Team")
         self.add_team_button.clicked.connect(self.add_team)
         layout.addWidget(self.add_team_button)
 
-        # Player Management Section
+
         self.player_name_input = QLineEdit()
         self.player_name_input.setPlaceholderText("Enter Player Name")
         layout.addWidget(QLabel("Add New Player:"))
@@ -83,12 +83,12 @@ class TeamManager(QWidget):
         layout.addWidget(QLabel("Player op.gg Link:"))
         layout.addWidget(self.player_url_input)
 
-        # Add Player Button
+
         self.add_player_button = QPushButton("Add Player to Database")
         self.add_player_button.clicked.connect(self.add_player)
         layout.addWidget(self.add_player_button)
 
-        # Set Layout
+
         self.setLayout(layout)
 
     def update_team_list(self):
@@ -99,10 +99,10 @@ class TeamManager(QWidget):
             item_text = f"{team}: {', '.join(display_players)}"
             item = QListWidgetItem(item_text)
             
-            # Checkbox for enabling/disabling teams
+
             item.setCheckState(Qt.CheckState.Checked if team_data["enabled"] else Qt.CheckState.Unchecked)
             item.setFlags(item.flags() | Qt.ItemFlag.ItemIsUserCheckable)
-            item.setData(Qt.ItemDataRole.UserRole, team)  # Store team name in item data
+            item.setData(Qt.ItemDataRole.UserRole, team) 
             self.team_list.addItem(item)
 
         self.team_list.itemChanged.connect(self.toggle_team_enabled)
@@ -116,7 +116,7 @@ class TeamManager(QWidget):
             self.unassigned_list.addItem(player)
 
     def toggle_team_enabled(self, item):
-        team_name = item.data(Qt.ItemDataRole.UserRole)  # Retrieve team name from item data
+        team_name = item.data(Qt.ItemDataRole.UserRole)  
         self.teams[team_name]["enabled"] = item.checkState() == Qt.CheckState.Checked
         save_json(TEAM_FILE, self.teams)
 
@@ -131,20 +131,20 @@ class TeamManager(QWidget):
             QMessageBox.warning(self, "Error", "Each team must have exactly 4 players.")
             return
         
-        # Validate player names exist in player list
+        
         missing_players = [p for p in player_names if p not in self.players]
         if missing_players:
             QMessageBox.critical(self, "Error", f"Players not found: {', '.join(missing_players)}.\nPlease add them first.")
             return
 
-        # Convert player names to URLs using players.json
-        player_urls = [self.players.get(name, name) for name in player_names]  # Use name if URL not found
+        
+        player_urls = [self.players.get(name, name) for name in player_names] 
         self.teams[team_name] = {"players": player_urls, "enabled": True}
         save_json(TEAM_FILE, self.teams)
         self.update_team_list()
         self.update_unassigned_list()
 
-        # Clear inputs
+      
         self.team_name_input.clear()
         for p in self.player_inputs:
             p.clear()
@@ -157,7 +157,7 @@ class TeamManager(QWidget):
             QMessageBox.warning(self, "Error", "Both fields are required.")
             return
 
-        # Save to players.json
+      
         self.players[player_name] = player_url
         save_json(PLAYER_FILE, self.players)
 
