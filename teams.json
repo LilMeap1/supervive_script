@@ -1,0 +1,164 @@
+{
+    "SB": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-fallfromgrace%23luca",
+            "https://supervive.op.gg/players/steam-SHIN%23xoxo",
+            "https://supervive.op.gg/players/steam-DetbareK%232819",
+            "https://supervive.op.gg/players/steam-gekko%236044"
+        ]
+    },
+    "TTV": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-adamarc%23LF6K",
+            "https://supervive.op.gg/players/steam-Tom%20Kick%23TTV",
+            "https://supervive.op.gg/players/steam-Teldo%23TLDO",
+            "https://supervive.op.gg/players/steam-TheAuri%23aura"
+        ]
+    },
+    "TRC": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-FateStrikes%23TTV",
+            "https://supervive.op.gg/players/steam-MrFluffyFish%23ezpz",
+            "https://supervive.op.gg/players/steam-gerninja%233112",
+            "https://supervive.op.gg/players/steam-Akalynx%23ICE"
+        ]
+    },
+    "WE": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-Mauku%230000",
+            "https://supervive.op.gg/players/steam-Mershak%23333",
+            "https://supervive.op.gg/players/steam-Symeri%230000",
+            "https://supervive.op.gg/players/steam-Hachi%23666"
+        ]
+    },
+    "ME": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-Reval%232222",
+            "https://supervive.op.gg/players/steam-Flashy%20Frost%237777",
+            "https://supervive.op.gg/players/steam-Godefroy%20de%20Bouillon%231663",
+            "https://supervive.op.gg/players/steam-Frances%2378"
+        ]
+    },
+    "GRR": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-SyR%23SyR",
+            "https://supervive.op.gg/players/steam-Signless%232222",
+            "https://supervive.op.gg/players/steam-AGGRRRREEESSIIFFF%233322",
+            "https://supervive.op.gg/players/steam-LE%20SMOLDE%23AHAH"
+        ]
+    },
+    "SBL": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-Quitlet%23ttfd",
+            "https://supervive.op.gg/players/steam-rankerrrr%23ru1",
+            "https://supervive.op.gg/players/steam-Vorrni%23ZZZZ",
+            "https://supervive.op.gg/players/steam-mikeinike%231488"
+        ]
+    },
+    "TWF": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-atomix%23goat",
+            "https://supervive.op.gg/players/steam-Dan%20Bridges%239001",
+            "https://supervive.op.gg/players/steam-Sid%236494",
+            "https://supervive.op.gg/players/steam-yaser%230000"
+        ]
+    },
+    "DOG": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-Synoyd%23TBND",
+            "https://supervive.op.gg/players/steam-Flawed%23GOAT",
+            "https://supervive.op.gg/players/steam-Cookiess66%23liv1",
+            "https://supervive.op.gg/players/steam-Mythi%23BOMB"
+        ]
+    },
+    "7AM": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-MrIceT%20XII%2312",
+            "https://supervive.op.gg/players/steam-wardaddy%231950",
+            "https://supervive.op.gg/players/steam-Talahon%20Pro%20Max%231605",
+            "https://supervive.op.gg/players/steam-Fuld%20gearing%232645"
+        ]
+    },
+    "99": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-Krabz%236149",
+            "https://supervive.op.gg/players/steam-Draekos%231111",
+            "https://supervive.op.gg/players/steam-Ancom%23AN",
+            "https://supervive.op.gg/players/steam-Seroo%230000"
+        ]
+    },
+    "OP": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-Matrix%23LOL",
+            "https://supervive.op.gg/players/steam-Kuba%232137",
+            "https://supervive.op.gg/players/steam-Kalskinator%23GR8T",
+            "https://supervive.op.gg/players/steam-mxTheo%231111"
+        ]
+    },
+    "ZBK": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-Mika%23ZBKA",
+            "https://supervive.op.gg/players/steam-Pytho%2355",
+            "https://supervive.op.gg/players/steam-Trutnaks%23RAT",
+            "https://supervive.op.gg/players/steam-woestijn%23F110"
+        ]
+    },
+    "THK": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-Sprocaine%23YOLA",
+            "https://supervive.op.gg/players/steam-Birouf%23MIF",
+            "https://supervive.op.gg/players/steam-shroom%231111",
+            "https://supervive.op.gg/players/steam-Arcane%23NOR"
+        ]
+    },
+    "QTS": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-Campo%23STRM",
+            "https://supervive.op.gg/players/steam-TTV%20Choipi%23KLWN",
+            "https://supervive.op.gg/players/steam-OC15%23TTV",
+            "https://supervive.op.gg/players/steam-meckimeck%23KDSR"
+        ]
+    },
+    "PDF": {
+        "enabled": false,
+        "players": [
+            "https://supervive.op.gg/players/steam-Rakiah%230000",
+            "https://supervive.op.gg/players/steam-Lancelot%23BDD",
+            "https://supervive.op.gg/players/steam-TTV%20eko765%23MEOW",
+            "https://supervive.op.gg/players/steam-Cicada%233301"
+        ]
+    },
+    "TBF": {
+        "players": [
+            "https://supervive.op.gg/players/steam-AidanBY%23BY",
+            "https://supervive.op.gg/players/steam-KlernY%235084",
+            "https://supervive.op.gg/players/steam-Blackrog%23LOL",
+            "https://supervive.op.gg/players/steam-Treadzy%23BOMB"
+        ],
+        "enabled": false
+    },
+    "TSM": {
+        "players": [
+            "https://supervive.op.gg/players/steam-blink%231337",
+            "https://supervive.op.gg/players/steam-LilMeap%230001",
+            "https://supervive.op.gg/players/steam-Kumcho%20Vulcho%23kur",
+            "https://supervive.op.gg/players/steam-Chronoxios%230000"
+        ],
+        "enabled": true
+    }
+}
