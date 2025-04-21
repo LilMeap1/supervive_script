@@ -1,0 +1,5 @@
+IS FOR NOW A LITTLE OUTDATED
+
+DM ME ON DISCORD (LilMeap) FOR NEW VERSION
+
+OR E-MAIL ME: lilmeapgod@gmail.com
